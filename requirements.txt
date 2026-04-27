@@ -1,0 +1,11 @@
+crewai[tools]>=0.80.0
+chainlit
+pydantic
+python-dotenv
+langchain-openai
+langchain-community
+asyncio
+os
+openai
+dotenv
+json

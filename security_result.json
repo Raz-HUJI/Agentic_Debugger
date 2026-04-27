@@ -1,0 +1,36 @@
+{
+  "command": "audit",
+  "timestamp": "2026-04-26T18:04:53Z",
+  "target_dir": "./broken_app",
+  "rubric": "Security Rubric",
+  "approved": false,
+  "analysis": "Bugs found:\nPotential NoneType dereference in app.py\nLog error detected: [ERROR] NullPointerException at line 42 in app.py",
+  "proposed_fix": "Add None-check before accessing .value attribute:\n  if result is not None:\n      return result.value\n  return default_value",
+  "judgment": {
+    "approved": false,
+    "overall_score": 0.51,
+    "rubric_name": "Security Rubric",
+    "criterion_scores": [
+      {
+        "id": "input_sanitization",
+        "name": "Input Sanitization",
+        "score": 0.3,
+        "rationale": "Stub: security analysis requires full LLM review."
+      },
+      {
+        "id": "injection_guard",
+        "name": "Injection Guard",
+        "score": 0.9,
+        "rationale": "Fix includes None guard."
+      },
+      {
+        "id": "secure_defaults",
+        "name": "Secure Defaults",
+        "score": 0.3,
+        "rationale": "Stub: security analysis requires full LLM review."
+      }
+    ],
+    "summary": "Overall score 51% is below the 75% pass threshold."
+  },
+  "exit_code": 10
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Code Quality Rubric",
+  "version": "1.0",
+  "description": "Evaluates fix quality for correctness, readability, and completeness",
+  "pass_threshold": 0.6,
+  "criteria": [
+    {
+      "id": "null_safety",
+      "name": "Null Safety",
+      "description": "Fix guards against null/None dereferences before attribute access",
+      "weight": 0.4
+    },
+    {
+      "id": "readability",
+      "name": "Readability",
+      "description": "Fix is readable, follows Python idioms, and is properly formatted",
+      "weight": 0.3
+    },
+    {
+      "id": "completeness",
+      "name": "Completeness",
+      "description": "Fix addresses all bugs reported in the analysis output",
+      "weight": 0.3
+    }
+  ]
+}

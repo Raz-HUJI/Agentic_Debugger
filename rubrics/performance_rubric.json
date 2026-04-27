@@ -1,0 +1,26 @@
+{
+  "name": "Performance Rubric",
+  "version": "1.0",
+  "description": "Evaluates fix quality for algorithmic efficiency and resource usage",
+  "pass_threshold": 0.65,
+  "criteria": [
+    {
+      "id": "complexity",
+      "name": "Algorithmic Complexity",
+      "description": "Fix does not worsen time or space complexity of the code path",
+      "weight": 0.4
+    },
+    {
+      "id": "efficiency",
+      "name": "Resource Efficiency",
+      "description": "Fix avoids unnecessary allocations, I/O calls, or redundant computation",
+      "weight": 0.35
+    },
+    {
+      "id": "completeness",
+      "name": "Completeness",
+      "description": "Fix addresses the performance bottleneck identified in the analysis",
+      "weight": 0.25
+    }
+  ]
+}

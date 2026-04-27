@@ -1,0 +1,26 @@
+{
+  "name": "Security Rubric",
+  "version": "1.0",
+  "description": "Evaluates fix quality against common security best practices (OWASP-aligned)",
+  "pass_threshold": 0.75,
+  "criteria": [
+    {
+      "id": "input_sanitization",
+      "name": "Input Sanitization",
+      "description": "Fix sanitizes or validates untrusted input before use",
+      "weight": 0.35
+    },
+    {
+      "id": "injection_guard",
+      "name": "Injection Guard",
+      "description": "Fix prevents injection vectors (SQL, command, path traversal)",
+      "weight": 0.35
+    },
+    {
+      "id": "secure_defaults",
+      "name": "Secure Defaults",
+      "description": "Fix applies principle of least privilege and safe fallback defaults",
+      "weight": 0.3
+    }
+  ]
+}
