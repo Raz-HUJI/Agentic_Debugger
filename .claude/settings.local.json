@@ -11,7 +11,8 @@
       "Bash(python agent_fix.py fix --target-dir ./broken_app)",
       "Bash(OPENAI_API_KEY=sk-fake python agent_fix.py --log-level DEBUG fix --target-dir ./broken_app)",
       "Bash(python agent_fix.py --help)",
-      "Bash(python -c \"import json; print\\(json.dumps\\(json.load\\(open\\('result.json'\\)\\), indent=2\\)\\)\")"
+      "Bash(python -c \"import json; print\\(json.dumps\\(json.load\\(open\\('result.json'\\)\\), indent=2\\)\\)\")",
+      "WebSearch"
     ]
   }
 }

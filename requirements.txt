@@ -1,11 +1,9 @@
+# Python 3.10–3.12 recommended. 3.13 has known crewai install failures (tiktoken, numpy). 3.14+ is unsupported.
+
 crewai[tools]>=0.80.0
 chainlit
 pydantic
 python-dotenv
 langchain-openai
 langchain-community
-asyncio
-os
 openai
-dotenv
-json
